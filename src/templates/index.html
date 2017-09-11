@@ -4,7 +4,43 @@
         <meta charset="UTF-8"> 
         <title>YVRUN</title>       
         <style>
-            html{background: lavender;}
+            html{height: 100%;}
+            body{border: 0; margin: 0; height: 100%;}
+            #app{
+                background: pink; 
+                width: 100%; 
+                height: 100%; 
+                display: flex; 
+                justify-content: center;
+            }
+            .root{                                
+                width: 100%;
+                background: blue;
+                display: flex;
+            }
+            
+            .root__left{
+                display: none;
+            }
+            .root__main{
+                width: 100%;
+            }            
+
+            @media only screen and (min-width: 890px){
+                .root{
+                    margin-top: 135px;
+                    width: 890px;                     
+                }
+                .root__left{
+                    display: block;
+                   width: 190px;
+                   background: white;
+                }
+                .root__main{
+                    width: 700px;
+                    background: lavender;
+                }                
+            }
         </style>
     </head>
     <body>
