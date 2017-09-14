@@ -1,0 +1,267 @@
+{
+    "days": [
+        {
+            "day": "Sunday",
+            "events": [
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                },
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "day": "Monday",
+            "events": [
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                },
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "day": "Tuesday",
+            "events": [
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                },
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                },
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "day": "Wednesday",
+            "events": [
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                },
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                },
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "day": "Thursday",
+            "events": [
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                },
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                },
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "day": "Frrday",
+            "events": [
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                },
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                },
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                }
+            ]
+        },
+        {
+            "day": "Saturday",
+            "events": [
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                },
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                },
+                {
+                    "group": "First Super Duper Running Group",
+                    "start": "6:30pm",
+                    "end": "8:00pm",
+                    "location": "Your House",
+                    "description": "An arbitrary description lies here.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
+                }
+            ]
+        }
+    ]
+}
