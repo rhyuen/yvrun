@@ -17,7 +17,7 @@ const DayBlockItem = (props) => {
 
 export default (props) => (
     <div className = "root__main__block">
-        <div className = "root__main__block__title">{props.day}</div>
+        <div id = {props.day} className = "root__main__block__title">{props.day}</div>
         {
             props.events.map((evt) => {
                 return (

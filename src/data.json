@@ -33,23 +33,11 @@
             "day": "Monday",
             "events": [
                 {
-                    "group": "First Super Duper Running Group",
+                    "group": "East Van Run Crew",
                     "start": "6:30pm",
                     "end": "8:00pm",
-                    "location": "Your House",
-                    "description": "An arbitrary description lies here.",
-                    "links": [
-                        "https://facebook.com",
-                        "https://instagram.com",
-                        "https://strava.com"
-                    ]
-                },
-                {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
-                    "end": "8:00pm",
-                    "location": "Your House",
-                    "description": "An arbitrary description lies here.",
+                    "location": "A Brewery in Vancouver",
+                    "description": "Running and beer because running and beer.",
                     "links": [
                         "https://facebook.com",
                         "https://instagram.com",
@@ -62,11 +50,11 @@
             "day": "Tuesday",
             "events": [
                 {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
+                    "group": "Running and Sushi",
+                    "start": "7:00pm",
                     "end": "8:00pm",
-                    "location": "Your House",
-                    "description": "An arbitrary description lies here.",
+                    "location": "181 Roundhouse Mews, Vancouver BC",
+                    "description": "Running for 40 minutes from Yaletown Roundhouse Community Centre.  There is sushi after.",
                     "links": [
                         "https://facebook.com",
                         "https://instagram.com",
@@ -103,11 +91,11 @@
             "day": "Wednesday",
             "events": [
                 {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
+                    "group": "Running Room on Cambie",
+                    "start": "6:00m",
                     "end": "8:00pm",
-                    "location": "Your House",
-                    "description": "An arbitrary description lies here.",
+                    "location": "2317 Cambie Street",
+                    "description": "Free running club.  10k distance",
                     "links": [
                         "https://facebook.com",
                         "https://instagram.com",
@@ -115,23 +103,11 @@
                     ]
                 },
                 {
-                    "group": "First Super Duper Running Group",
+                    "group": "Mile2Marathon Striders",
                     "start": "6:30pm",
                     "end": "8:00pm",
-                    "location": "Your House",
-                    "description": "An arbitrary description lies here.",
-                    "links": [
-                        "https://facebook.com",
-                        "https://instagram.com",
-                        "https://strava.com"
-                    ]
-                },
-                {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
-                    "end": "8:00pm",
-                    "location": "Your House",
-                    "description": "An arbitrary description lies here.",
+                    "location": "Point Grey Track",
+                    "description": "~5km of running around a track.",
                     "links": [
                         "https://facebook.com",
                         "https://instagram.com",
@@ -142,19 +118,7 @@
         },
         {
             "day": "Thursday",
-            "events": [
-                {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
-                    "end": "8:00pm",
-                    "location": "Your House",
-                    "description": "An arbitrary description lies here.",
-                    "links": [
-                        "https://facebook.com",
-                        "https://instagram.com",
-                        "https://strava.com"
-                    ]
-                },
+            "events": [                
                 {
                     "group": "First Super Duper Running Group",
                     "start": "6:30pm",
@@ -182,40 +146,16 @@
             ]
         },
         {
-            "day": "Frrday",
+            "day": "Friday",
             "events": [
                 {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
-                    "end": "8:00pm",
-                    "location": "Your House",
+                    "group": "Fraser Street Run Club",
+                    "start": "7:00pm",
+                    "end": "8:30pm",
+                    "location": "923 East 10th Avenue",
                     "description": "An arbitrary description lies here.",
                     "links": [
-                        "https://facebook.com",
-                        "https://instagram.com",
-                        "https://strava.com"
-                    ]
-                },
-                {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
-                    "end": "8:00pm",
-                    "location": "Your House",
-                    "description": "An arbitrary description lies here.",
-                    "links": [
-                        "https://facebook.com",
-                        "https://instagram.com",
-                        "https://strava.com"
-                    ]
-                },
-                {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
-                    "end": "8:00pm",
-                    "location": "Your House",
-                    "description": "An arbitrary description lies here.",
-                    "links": [
-                        "https://facebook.com",
+                        "https://www.facebook.com/groups/380233985492086/",
                         "https://instagram.com",
                         "https://strava.com"
                     ]
@@ -226,11 +166,11 @@
             "day": "Saturday",
             "events": [
                 {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
-                    "end": "8:00pm",
-                    "location": "Your House",
-                    "description": "An arbitrary description lies here.",
+                    "group": "False Creek Loop (4, 6, 8, 11 km)",
+                    "start": "9:30am",
+                    "end": "11:00am",
+                    "location": "#1 Kingsway",
+                    "description": "Running from Mount Pleasant Community Centre.",
                     "links": [
                         "https://facebook.com",
                         "https://instagram.com",
@@ -238,11 +178,11 @@
                     ]
                 },
                 {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
-                    "end": "8:00pm",
-                    "location": "Your House",
-                    "description": "An arbitrary description lies here.",
+                    "group": "Park Run in Richmond",
+                    "start": "8:45am",
+                    "end": "10:00am",
+                    "location": "7891 Cambie Road, Richmond",
+                    "description": "A free, weekly timed run in Richmond by the Olympic Oval.",
                     "links": [
                         "https://facebook.com",
                         "https://instagram.com",
