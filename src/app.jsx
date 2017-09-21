@@ -1,10 +1,27 @@
 import React, {Component} from "react";
 import Dayblock from "./dayblock.jsx";
 import Nav from "./nav.jsx";
+import Footer from "./footer.jsx";
 import runData from "./data.json";
 
 
 class App extends Component{    
+    constructor(props){
+        super(props);
+        this.state = {
+            collapsed: [],
+            emailForm: ""
+        };
+    }
+
+    handleFormValue(evt){
+        this.setState((prevState) => {
+            return {
+                collapsed: prevState.collapsed,
+                emailForm: evt.target.value
+            }
+        });
+    }
 
     render(){        
         return (
@@ -21,22 +38,8 @@ class App extends Component{
                                 <Dayblock day = {item.day} events = {item.events}/>
                             );
                         })
-                    }
-                                         
-                    <footer>
-                        <div>Blurb for email signup.</div>
-                        <div>Blurb for who did this.</div>
-                        <div>
-                            <input type = "checkbox" checked/>
-                        </div>
-                        <div>                            
-                            {runData.days.map((item) => {
-                                return (
-                                    <span>{item.day}</span>
-                                );
-                            })}
-                        </div>
-                    </footer>
+                    }                                         
+                  <Footer formValue = {this.state.emailForm}/>
                 </div>
             </div>
         );

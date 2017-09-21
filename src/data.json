@@ -4,22 +4,10 @@
             "day": "Sunday",
             "events": [
                 {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
-                    "end": "8:00pm",
-                    "location": "Your House",
-                    "description": "An arbitrary description lies here.",
-                    "links": [
-                        "https://facebook.com",
-                        "https://instagram.com",
-                        "https://strava.com"
-                    ]
-                },
-                {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
-                    "end": "8:00pm",
-                    "location": "Your House",
+                    "group": "5 km & 10 km Slow Sunday",
+                    "start": "10:00 am",
+                    "end": "12:00 pm",
+                    "location": "Burnaby Lake (Sprott Street & Sperling Avenue)",
                     "description": "An arbitrary description lies here.",
                     "links": [
                         "https://facebook.com",
@@ -60,30 +48,6 @@
                         "https://instagram.com",
                         "https://strava.com"
                     ]
-                },
-                {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
-                    "end": "8:00pm",
-                    "location": "Your House",
-                    "description": "An arbitrary description lies here.",
-                    "links": [
-                        "https://facebook.com",
-                        "https://instagram.com",
-                        "https://strava.com"
-                    ]
-                },
-                {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
-                    "end": "8:00pm",
-                    "location": "Your House",
-                    "description": "An arbitrary description lies here.",
-                    "links": [
-                        "https://facebook.com",
-                        "https://instagram.com",
-                        "https://strava.com"
-                    ]
                 }
             ]
         },
@@ -113,6 +77,18 @@
                         "https://instagram.com",
                         "https://strava.com"
                     ]
+                },
+                {
+                    "group": "East Van Intervals Striders",
+                    "start": "6:00pm",
+                    "end": "8:00pm",
+                    "location": "1780 E. Broadway (Safeway on Broadway and Commerical)",
+                    "description": "No Description",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
                 }
             ]
         },
@@ -120,22 +96,10 @@
             "day": "Thursday",
             "events": [                
                 {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
-                    "end": "8:00pm",
-                    "location": "Your House",
-                    "description": "An arbitrary description lies here.",
-                    "links": [
-                        "https://facebook.com",
-                        "https://instagram.com",
-                        "https://strava.com"
-                    ]
-                },
-                {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
-                    "end": "8:00pm",
-                    "location": "Your House",
+                    "group": "Magical Burnaby Mountain",
+                    "start": "5:00pm",
+                    "end": "7:30pm",
+                    "location": "6568 Hastings Street (Starbucks)",
                     "description": "An arbitrary description lies here.",
                     "links": [
                         "https://facebook.com",
@@ -183,18 +147,6 @@
                     "end": "10:00am",
                     "location": "7891 Cambie Road, Richmond",
                     "description": "A free, weekly timed run in Richmond by the Olympic Oval.",
-                    "links": [
-                        "https://facebook.com",
-                        "https://instagram.com",
-                        "https://strava.com"
-                    ]
-                },
-                {
-                    "group": "First Super Duper Running Group",
-                    "start": "6:30pm",
-                    "end": "8:00pm",
-                    "location": "Your House",
-                    "description": "An arbitrary description lies here.",
                     "links": [
                         "https://facebook.com",
                         "https://instagram.com",

@@ -25,8 +25,7 @@
             }
             .root__left__logo{
                 background: lavender;
-                border-radius: 5px;
-                color: white;
+                border-radius: 5px;                
                 width: 50%;
                 padding-bottom: 50%;
             }
@@ -65,25 +64,31 @@
                 background: #D1CECE;
             }
 
-            .root__main{                
-                background: lavender;                
-                width: 100%;
+            .root__main{                                
+                width: 100%;                
             }
             .root__main__title{
                 font-size: 2.5rem;
-                padding-bottom: 2rem;
+                padding-bottom: 2rem;                
             }
             .root__main__content{
                 font-size: 1.75rem;
                 padding-bottom: 2rem;
                 color: rgba(0,0,0,0.5);
             }
-
+            .root__main__content a{
+                text-decoration: none;                
+            }
+            .root__main__content a:hover{
+                background: lavender;
+                border-radius: 5px;
+                text-decoration: underline;
+            }
             
             .root__main__block{                                
                 font-size: 18px;
                 font-weight: 800;
-                background: white;                 
+                background: white;
             }
             .root__main__block__title{
                 text-transform: uppercase;
@@ -109,22 +114,63 @@
             .root__main__block__item__header:hover{
                 background-color: #f7f7f7;
             }
-            .root__main__block__item__header__name{                
+            .root__main__block__item__header__name{           
+                width: 90%;     
+            }
+            .root__main__block__item__header__name__time{
+                color: #b8b8b8;
             }
             .root__main__block__item__header__dropdown{
-                background: pink;
+                background: lavender;
+                max-width: 10%;
+                width: 2rem;
+                height: 2rem;
+                border-radius: 5px;
             }
             .root__main__block__item__details{
                 padding: 1rem 2rem;
                 background: #f7f7f7;
             }
+            .root__main__block__item__details--collapsed{
+                display: none;
+            }
 
             footer{
                 background: lavender;
                 margin-top: 2rem;
-                padding: 1rem 2rem;
+                padding: 2rem 2rem;
                 margin-bottom: 5rem;
+                border-radius: 5px;
             }
+            .footer__header{
+                font-size: 18px;
+                font-weight: 600;
+                letter-spacing: 2px;
+                color: white;
+            }
+            .footer__form{
+                margin-top: 1rem;                
+            }
+            .footer__form__text{
+                font-size: 13px;
+                padding: 0.5rem;
+                border: none;
+            }
+            .footer__form__text:focus{
+                outline:none;
+            }
+            .footer__form__submit{
+                color: white;
+                font-size: 13px;
+                background: #9013fe;
+                text-transform: uppercase;
+                border: none;
+                padding: 0.5rem;
+            }
+            .footer__form__submit{
+                outline: none;
+            }
+            
 
             @media only screen and (min-width: 890px){
                 .root{
@@ -138,8 +184,7 @@
                 }
                 .root__main{
                     width: 700px;
-                    position: relative;                    
-                    background: lavender;
+                    position: relative;                                        
                 }                
             }
         </style>
