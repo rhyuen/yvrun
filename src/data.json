@@ -8,7 +8,7 @@
                     "start": "10:00 am",
                     "end": "12:00 pm",
                     "location": "Burnaby Lake (Sprott Street & Sperling Avenue)",
-                    "description": "An arbitrary description lies here.",
+                    "description": "Runnin' on a Sunday with strangers.",
                     "links": [
                         "https://facebook.com",
                         "https://instagram.com",
@@ -71,7 +71,7 @@
                     "start": "6:30pm",
                     "end": "8:00pm",
                     "location": "Point Grey Track",
-                    "description": "~5km of running around a track.",
+                    "description": "~5km of intense running around a track.",
                     "links": [
                         "https://facebook.com",
                         "https://instagram.com",
@@ -83,7 +83,7 @@
                     "start": "6:00pm",
                     "end": "8:00pm",
                     "location": "1780 E. Broadway (Safeway on Broadway and Commerical)",
-                    "description": "No Description",
+                    "description": "More intense runnin' with strangers on a Wednesday.",
                     "links": [
                         "https://facebook.com",
                         "https://instagram.com",
@@ -100,11 +100,21 @@
                     "start": "5:00pm",
                     "end": "7:30pm",
                     "location": "6568 Hastings Street (Starbucks)",
-                    "description": "An arbitrary description lies here.",
+                    "description": "Runnin' with strangers on a Thursday.",
                     "links": [
                         "https://facebook.com",
                         "https://instagram.com",
                         "https://strava.com"
+                    ]
+                },
+                {
+                    "group": "Vancouver Running Co",
+                    "start": "6:15pm",
+                    "end": "8:00pm",
+                    "location": "1886 W. 1st Avenue",
+                    "description": "5 - 6 km and 9-11 km.  There are pacers and it's FREE.",
+                    "links": [
+                        "https://vanrunco.com/pages/flight-crew"
                     ]
                 }
             ]
@@ -117,7 +127,7 @@
                     "start": "7:00pm",
                     "end": "8:30pm",
                     "location": "923 East 10th Avenue",
-                    "description": "An arbitrary description lies here.",
+                    "description": "Runnin' with strangers on a Friday.",
                     "links": [
                         "https://www.facebook.com/groups/380233985492086/",
                         "https://instagram.com",
