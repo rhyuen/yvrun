@@ -16,7 +16,7 @@ export default (props) => (
             }                        
         </div>
         <div className = "root__left__footer">
-            <div className = "root__left__footer__title">Share on</div>                        
+            <div className = "root__left__footer__title">Social</div>                        
             <div className = "root__left__footer__icons">
                 <div className = "root__left__footer__icons__item root__left__footer__icons__item--fb"></div>
                 <div className = "root__left__footer__icons__item root__left__footer__icons__item--twit"></div>

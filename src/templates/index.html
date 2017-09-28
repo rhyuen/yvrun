@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"> 
-        <title>YVRUN</title>       
+        <title>YVRUN, Running with Strangers</title>       
         <style>
             html{height: 100%; font-family: "Calibri";}
             body{border: 0; margin: 0; height: 100%;}
@@ -15,6 +15,7 @@
             .root{                                
                 width: 100%;                
                 display: flex;
+                margin-top: 135px;
             }
             
             .root__left{                          
@@ -25,9 +26,13 @@
             }
             .root__left__logo{
                 background: lavender;
-                border-radius: 5px;                
+                border-radius: 10px;                
                 width: 50%;
                 padding-bottom: 50%;
+                cursor: pointer;
+            }
+            .root__left__logo:hover{
+                background: #9013fe;
             }
             .root__left__nav{
                 padding-top: 2.5rem;                
@@ -124,6 +129,9 @@
             .root__main__block__item__header__name{           
                 width: 90%;     
             }
+            .root__main__block__item__header__text{
+
+            }
             .root__main__block__item__header__name__time{
                 color: #b8b8b8;
             }
@@ -137,9 +145,22 @@
             .root__main__block__item__details{
                 padding: 1rem 2rem;
                 background: #f7f7f7;
-            }
+                display: block;
+            }            
             .root__main__block__item__details--collapsed{
                 display: none;
+            }
+            .root__main__block__item__details__description{
+
+            }
+            .root__main__block__item__details__location{
+                
+            }
+            .root__main__block__item__details__map{
+                
+            }
+            .root__main__block__item__details__social{
+                
             }
 
             footer{
@@ -185,8 +206,7 @@
             
 
             @media only screen and (min-width: 890px){
-                .root{
-                    margin-top: 135px;
+                .root{                    
                     width: 890px;                     
                 }
                 .root__left{                    
