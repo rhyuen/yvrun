@@ -3,7 +3,8 @@
         "react",
         "env"
     ],
-    "plugins": [
+    "plugins": [        
+        "transform-object-rest-spread",
         "transform-class-properties"
     ]
 }

@@ -31,7 +31,7 @@ export default (props) => (
     <div className = "root__main__block">
         <div id = {props.day} className = "root__main__block__title">{props.day}</div>
         {
-            props.events.map(evt => <DayBlockItem event = {evt}/>)            
+            props.events.map((evt, index) => <DayBlockItem key = {index} event = {evt}/>)            
         }
     </div>
 );

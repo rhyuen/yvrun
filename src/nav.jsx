@@ -5,10 +5,10 @@ export default (props) => (
         <div className = "root__left__logo"></div>
         <div className = "root__left__nav">
             {
-                props.days.map((el) => {
+                props.days.map((el, index) => {
                     let anchor = `#${el.day}`;
                     return (
-                        <div className = "root__left__nav__item">
+                        <div key = {index} className = "root__left__nav__item">
                             <a href = {anchor}>{el.day}</a>
                         </div>
                     );
