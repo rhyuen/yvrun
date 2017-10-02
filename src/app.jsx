@@ -11,6 +11,7 @@ class App extends Component{
     state = {
         collapsed: [],
         emailText: "",
+        commentTitle: "",
         commentText: "",
         commentFormVisibility: false
     }    
@@ -18,9 +19,8 @@ class App extends Component{
     handleEmailChange =(email) => {                
         this.setState((prevState) => {                 
             return {
-                collapsed: prevState.collapsed,
-                emailText: email,
-                commentText: prevState.commentForm
+                ...prevState,
+                emailText: email
             };
         });
     }
@@ -31,41 +31,49 @@ class App extends Component{
         //MAKE A POST TO A SERVER HERE.
 
         this.setState((prevState, props) => {
-            return{   
-                collapsed: prevState.collapsed,
-                emailText: "",
-                commentText: prevState.commentForm
-            }
+            return {   
+                ...prevState,
+                emailText: ""
+            };
         });
     }
 
     handleCommentFormVisibility = (e) => {
         e.preventDefault();
+        //Do a Check for if you're inside the Dialog, then do not close.
+
         this.setState((prevState, props) => {
             return {
-                collapsed: prevState.collapsed,
-                emailText: prevState.emailText,
+                ...prevState,
                 commentFormVisibility: !prevState.commentFormVisibility
             };
         });
     }
 
-    handleCommentChange = (e) => {
+    handleCommentTitleChange = (e) => {
+        console.log(e);        
         this.setState(prevState => {
-            return {
-                collapsed: prevState.collapsed,
-                emailText: prevState.emailForm,
-                commentText: e.target.value
+            return {                
+                ...prevState,
+                commentTitle: e                
             }
         });
-    }    
+    }  
+    handleCommentTextChange = e => {
+        this.setState(prevState => {
+            return {
+                ...prevState,
+                commentText: e
+            };
+        });
+    }
 
     handleCommentSubmit = (e) => {
         e.preventDefault();
         this.setState((prevState, props) => {
-            return (
-                null
-            );
+            return {
+                ...prevState
+            };
         });
     }
 
@@ -76,8 +84,10 @@ class App extends Component{
             <div className = "root">
                 <CommentForm commentFormVisibility = {this.state.commentFormVisibility}
                     onCommentFormVisibility = {this.handleCommentFormVisibility}
-                    commentValue = {this.state.commentText}
-                    onCommentChange = {this.handleCommentChange}
+                    commentTitle = {this.state.commentTitle}
+                    commentText = {this.state.commentText}
+                    onCommentTitleChange = {this.handleCommentTitleChange}
+                    onCommentTextChange = {this.handleCommentTextChange}
                     onCommentSubmit = {this.handleCommentSubmit}/>
                 <Nav days = {runData.days}/>               
                 <div className = "root__main">
