@@ -16,11 +16,12 @@ class App extends Component{
         commentFormVisibility: false
     }    
 
-    handleEmailChange =(email) => {                
+    handleEmailChange =(e) => {
+        const latestEmailValue = e.target.value;                
         this.setState((prevState) => {                 
             return {
                 ...prevState,
-                emailText: email
+                emailText: latestEmailValue
             };
         });
     }
@@ -51,19 +52,21 @@ class App extends Component{
     }
 
     handleCommentTitleChange = (e) => {
-        console.log(e);        
+        console.log(e);   
+        const latestCommentTitle = e.target.value;     
         this.setState(prevState => {
             return {                
                 ...prevState,
-                commentTitle: e                
-            }
+                commentTitle: latestCommentTitle
+            };
         });
     }  
-    handleCommentTextChange = e => {
+    handleCommentTextChange = e => {        
+        const latestCommentText = e.target.value;
         this.setState(prevState => {
             return {
                 ...prevState,
-                commentText: e
+                commentText: latestCommentText
             };
         });
     }
@@ -71,8 +74,20 @@ class App extends Component{
     handleCommentSubmit = (e) => {
         e.preventDefault();
         this.setState((prevState, props) => {
+            //DO A POST
             return {
-                ...prevState
+                ...prevState,
+                commentTitle: "",
+                commentText: ""
+            };
+        });
+    }
+
+    handleCommentFormClose = e => {
+        this.setState((prevState, props) => {
+            return {
+                ...prevState,
+                commentFormVisibility: false
             };
         });
     }
