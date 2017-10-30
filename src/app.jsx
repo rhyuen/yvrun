@@ -5,18 +5,20 @@ import MainSplash from "./mainsplash.jsx";
 import Footer from "./footer.jsx";
 import runData from "./data.json";
 import CommentForm from "./commentform.jsx";
+import uuid from "uuid";
 
 
 class App extends Component{        
     state = {
         collapsed: [],
+        runEvents: this.props.runData,
         emailText: "",
         commentTitle: "",
         commentText: "",
         commentFormVisibility: false
     }    
 
-    handleEmailChange =(e) => {
+    handleEmailChange = e => {
         const latestEmailValue = e.target.value;                
         this.setState((prevState) => {                 
             return {
@@ -26,7 +28,7 @@ class App extends Component{
         });
     }
 
-    handleEmailSubmit = (e) => {
+    handleEmailSubmit = e => {
         e.preventDefault();
 
         //MAKE A POST TO A SERVER HERE.
@@ -39,7 +41,7 @@ class App extends Component{
         });
     }
 
-    handleCommentFormVisibility = (e) => {
+    handleCommentFormVisibility = e => {
         e.preventDefault();
         //Do a Check for if you're inside the Dialog, then do not close.
 
@@ -51,7 +53,7 @@ class App extends Component{
         });
     }
 
-    handleCommentTitleChange = (e) => {
+    handleCommentTitleChange = e => {
         console.log(e);   
         const latestCommentTitle = e.target.value;     
         this.setState(prevState => {
@@ -71,7 +73,7 @@ class App extends Component{
         });
     }
 
-    handleCommentSubmit = (e) => {
+    handleCommentSubmit = e => {
         e.preventDefault();
         this.setState((prevState, props) => {
             //DO A POST
@@ -94,7 +96,7 @@ class App extends Component{
 
 
 
-    render(){        
+    render(){                
         return (
             <div className = "root">
                 <CommentForm commentFormVisibility = {this.state.commentFormVisibility}
@@ -104,11 +106,11 @@ class App extends Component{
                     onCommentTitleChange = {this.handleCommentTitleChange}
                     onCommentTextChange = {this.handleCommentTextChange}
                     onCommentSubmit = {this.handleCommentSubmit}/>
-                <Nav days = {runData.days}/>               
+                <Nav days = {this.state.runEvents}/>               
                 <div className = "root__main">
                     <MainSplash onCommentFormVisibility = {this.handleCommentFormVisibility}/>
                     {
-                        runData.days.map((item, index) => {
+                        this.state.runEvents.map((item, index) => {
                             return (
                                 <Dayblock key = {index} 
                                     day = {item.day} 

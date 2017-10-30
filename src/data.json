@@ -4,7 +4,7 @@
             "day": "Sunday",
             "events": [
                 {
-                    "group": "5 km & 10 km Slow Sunday",
+                    "group": "5 km & 10 km",
                     "start": "10:00 am",
                     "end": "12:00 pm",
                     "location": "Burnaby Lake (Sprott Street & Sperling Avenue)",
@@ -96,7 +96,7 @@
             "day": "Thursday",
             "events": [                
                 {
-                    "group": "Magical Burnaby Mountain",
+                    "group": "Burnaby Mountain",
                     "start": "5:00pm",
                     "end": "7:30pm",
                     "location": "6568 Hastings Street (Starbucks)",

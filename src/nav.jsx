@@ -1,11 +1,11 @@
 import React, {component} from "react";
 
-export default (props) => (
+export default ({days}) => (
     <div className = "root__left">                    
         <div className = "root__left__logo"></div>
         <div className = "root__left__nav">
-            {
-                props.days.map((el, index) => {
+            {                
+                days.map((el, index) => {                    
                     let anchor = `#${el.day}`;
                     return (
                         <div key = {index} className = "root__left__nav__item">

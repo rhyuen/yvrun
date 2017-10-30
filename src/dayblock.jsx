@@ -1,37 +1,40 @@
 import React, {Component} from "react";
 
-const DayBlockItem = (props) => {
+const DayBlockItem = ({event}) => {
+    //Details Visibility Here.
+
     return (
         <div className = "root__main__block__item">
             <div className = "root__main__block__item__header">
                 <span className = "root__main__block__item__header__name">
-                    <span className = "root__main__block__item__header__text">{props.event.group}</span>
-                    <span className = "root__main__block__item__header__name__time"> {props.event.start} - {props.event.end}</span>
+                    <span className = "root__main__block__item__header__text">{event.group}</span>
+                    <span className = "root__main__block__item__header__name__time"> {event.start} - {event.end}</span>
                 </span>
                 <span className = "root__main__block__item__header__dropdown"></span>
             </div>
            <DayBlockDetails 
-            description = {props.event.description} 
-            location = {props.event.location}/>
+            description = {event.description} 
+            location = {event.location}/>
         </div>
     )
 };
 
-const DayBlockDetails = (props) => (
+const DayBlockDetails = ({description, location}) => (
     <div className = "root__main__block__item__details">
-        {props.description}<br/>
-        {props.location}
+        {description}<br/>
+        {location}
         <div className = "root__main__block__item__details__description"></div>
         <div className = "root__main__block__item__details__location"></div>
         <div className = "root__main__block__item__details__map"></div>
         <div className = "root__main__block__item__details__social"></div>
     </div>
 );
-export default (props) => (
+
+export default ({events, day}) => (
     <div className = "root__main__block">
-        <div id = {props.day} className = "root__main__block__title">{props.day}</div>
+        <div id = {day} className = "root__main__block__title">{day}</div>
         {
-            props.events.map((evt, index) => <DayBlockItem key = {index} event = {evt}/>)            
+            events.map((evt, index) => <DayBlockItem key = {index} event = {evt}/>)            
         }
     </div>
 );
