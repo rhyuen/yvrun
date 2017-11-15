@@ -1,20 +1,21 @@
 import React, {Component} from "react";
 
-const DayBlockItem = ({event}) => {
+const DayBlockItem = ({event, onEventDetailChange}) => {
     //Details Visibility Here.
-
+    const details = !(event.collapsed) ? 
+        <DayBlockDetails 
+            description = {event.description} 
+            location = {event.location}/> : null;
     return (
         <div className = "root__main__block__item">
-            <div className = "root__main__block__item__header">
+            <div className = "root__main__block__item__header" onClick = {onEventDetailChange.bind(this, event.id)}>
                 <span className = "root__main__block__item__header__name">
                     <span className = "root__main__block__item__header__text">{event.group}</span>
                     <span className = "root__main__block__item__header__name__time"> {event.start} - {event.end}</span>
                 </span>
                 <span className = "root__main__block__item__header__dropdown"></span>
             </div>
-           <DayBlockDetails 
-            description = {event.description} 
-            location = {event.location}/>
+            {details}           
         </div>
     )
 };
@@ -30,11 +31,15 @@ const DayBlockDetails = ({description, location}) => (
     </div>
 );
 
-export default ({events, day}) => (
+export default ({events, day, onEventDetailChange}) => (
     <div className = "root__main__block">
         <div id = {day} className = "root__main__block__title">{day}</div>
         {
-            events.map((evt, index) => <DayBlockItem key = {index} event = {evt}/>)            
+            events.map((evt, index) => 
+                <DayBlockItem key = {index} 
+                    event = {evt}
+                    onEventDetailChange = {onEventDetailChange}/>
+            )            
         }
     </div>
 );

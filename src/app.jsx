@@ -3,14 +3,11 @@ import Dayblock from "./dayblock.jsx";
 import Nav from "./nav.jsx";
 import MainSplash from "./mainsplash.jsx";
 import Footer from "./footer.jsx";
-import runData from "./data.json";
 import CommentForm from "./commentform.jsx";
-import uuid from "uuid";
 
 
 class App extends Component{        
-    state = {
-        collapsed: [],
+    state = {        
         runEvents: this.props.runData,
         emailText: "",
         commentTitle: "",
@@ -53,8 +50,7 @@ class App extends Component{
         });
     }
 
-    handleCommentTitleChange = e => {
-        console.log(e);   
+    handleCommentTitleChange = e => {        
         const latestCommentTitle = e.target.value;     
         this.setState(prevState => {
             return {                
@@ -79,6 +75,7 @@ class App extends Component{
             //DO A POST
             return {
                 ...prevState,
+                commentFormVisibility: false,
                 commentTitle: "",
                 commentText: ""
             };
@@ -90,6 +87,56 @@ class App extends Component{
             return {
                 ...prevState,
                 commentFormVisibility: false
+            };
+        });
+    }
+
+    handleEventDetailCollapse = (id, e) => {        
+        let dayIndex = null;
+        let eventIndex = null;
+
+        //find indices to change
+        //dayIndex 0 - 6
+        //eventIndex 0 to length -1 
+        let theDate = this.state.runEvents.forEach((day, day_index) => {
+            day.events.forEach((evt, evt_index) => {
+                if(evt.id === id){                    
+                    dayIndex = day_index;
+                    eventIndex = evt_index;
+                }
+            });
+        });
+        
+        
+        this.setState(prevState => {
+
+            //The elements that don't change that are before the POI.
+            let firstPart = prevState.runEvents.slice(0, dayIndex);  //Begin WEek
+            let lastPart = prevState.runEvents.splice(dayIndex + 1); //End Week
+
+            //The Event Element with the value you're changing.
+            let updatedElement = Object.assign({}, 
+                prevState.runEvents[dayIndex].events[eventIndex], {
+                    collapsed: !prevState.runEvents[dayIndex].events[eventIndex].collapsed
+                });
+            //Day to Change
+            //Old day to merge with the new one.
+                        
+             const updatedDay = Object.assign({}, {
+                    day: prevState.runEvents[dayIndex].day
+                }, {
+                    events: [
+                        ...prevState.runEvents[dayIndex].events.slice(0, eventIndex),
+                        updatedElement,
+                        ...prevState.runEvents[dayIndex].events.splice(eventIndex + 1)
+                    ]
+                }
+            );
+                                                
+            const finalUpdatedWeek = firstPart.concat(updatedDay).concat(lastPart);            
+            return {
+                ...prevState,
+                runEvents: finalUpdatedWeek
             };
         });
     }
@@ -114,7 +161,8 @@ class App extends Component{
                             return (
                                 <Dayblock key = {index} 
                                     day = {item.day} 
-                                    events = {item.events}/>
+                                    events = {item.events}
+                                    onEventDetailChange = {this.handleEventDetailCollapse}/>
                             );
                         })
                     }                                         

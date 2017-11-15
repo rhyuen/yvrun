@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"> 
-        <title>YVRUN</title>       
+        <title>YVRUN, Running with Strangers</title>       
         <style>
             html{height: 100%; font-family: "Calibri";}
             body{border: 0; margin: 0; height: 100%;}
@@ -15,7 +15,83 @@
             .root{                                
                 width: 100%;                
                 display: flex;
+                margin-top: 135px;
+                position: relative;
             }
+
+
+            .comment{
+                background: rgba(0,0,0,0.5);
+                top: 0;
+                left: 0;
+                position: fixed;
+                width: 100rem;
+                height: 100rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 2;                
+            }
+            .comment__form{
+                display: flex;
+                justify-content: center;
+                align-items: center;    
+                background: white;   
+                width: 25rem;
+                height: 25rem;
+                border-radius: 1rem;
+                position: relative;
+            }
+            .comment__form__exit{
+                position: absolute;
+                right: 1.5rem;
+                top: 1.5rem;                
+                width: 1rem;
+                height: 1rem;
+            }
+            .comment__form__exit__button{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #9013fe;                
+                border-radius: 50%;
+            }
+            .comment__form__exit__button:hover{
+                background: red;                
+                box-sizing: border-box;
+            }
+
+            .comment__form__field{
+                width: 50%;
+            }
+            .comment__form__field__input{
+                font-size: 13px;
+                padding: 0.5rem;
+                border: none;
+                box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+                margin-bottom: 1rem;
+                box-sizing: border-box;                
+            }
+            .comment__form__field__input:focus{
+                outline: none;                
+                border-bottom: 3px inset #9013fe;
+            }
+            
+            .comment__form__field__submit{
+                color: white;
+                font-size: 13px;
+                background: #9013fe;
+                text-transform: uppercase;
+                border: none;
+                padding: 0.5rem;
+            }
+            .comment__form__field__submit:focus{
+                outline: none;
+            }
+
+
             
             .root__left{                          
                 display: none;
@@ -25,9 +101,13 @@
             }
             .root__left__logo{
                 background: lavender;
-                border-radius: 5px;                
+                border-radius: 10px;                
                 width: 50%;
                 padding-bottom: 50%;
+                cursor: pointer;
+            }
+            .root__left__logo:hover{
+                background: #9013fe;
             }
             .root__left__nav{
                 padding-top: 2.5rem;                
@@ -124,6 +204,9 @@
             .root__main__block__item__header__name{           
                 width: 90%;     
             }
+            .root__main__block__item__header__text{
+
+            }
             .root__main__block__item__header__name__time{
                 color: #b8b8b8;
             }
@@ -137,9 +220,22 @@
             .root__main__block__item__details{
                 padding: 1rem 2rem;
                 background: #f7f7f7;
-            }
+                display: block;
+            }            
             .root__main__block__item__details--collapsed{
                 display: none;
+            }
+            .root__main__block__item__details__description{
+
+            }
+            .root__main__block__item__details__location{
+                
+            }
+            .root__main__block__item__details__map{
+                
+            }
+            .root__main__block__item__details__social{
+                
             }
 
             footer{
@@ -185,9 +281,15 @@
             
 
             @media only screen and (min-width: 890px){
-                .root{
-                    margin-top: 135px;
+                .root{                    
                     width: 890px;                     
+                }
+                .comment{                    
+                    top: 0;
+                    left: 0;
+                    position: fixed;
+                    width: 100%;
+                    height: 100%;                    
                 }
                 .root__left{                    
                     display: block;
