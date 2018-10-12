@@ -3,5 +3,6 @@
     "alias": [
         "yvrun"
     ],
+    "type": "static",
     "public": true        
 }

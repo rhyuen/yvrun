@@ -48,6 +48,18 @@
                         "https://instagram.com",
                         "https://strava.com"
                     ]
+                },
+                {
+                    "group": "Track and Tub",
+                    "start": "7:00pm",
+                    "end": "8:00pm",
+                    "location": "Eric Hamber Secondary School Track",
+                    "description": "Running fervently around a high school track.",
+                    "links": [
+                        "https://facebook.com",
+                        "https://instagram.com",
+                        "https://strava.com"
+                    ]
                 }
             ]
         },

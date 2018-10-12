@@ -6,11 +6,12 @@
   "scripts": {
     "start": "webpack",
     "dev": "webpack-dev-server --open",
-    "deploy": "now ./dist --public"
+    "deploy": "now ./public --public  && now ./public alias"
   },
   "dependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "prop-types": "15.6.1",
+    "react": "16.4.0",
+    "react-dom": "16.4.0",
     "uuid": "^3.1.0"
   },
   "devDependencies": {
@@ -22,6 +23,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "html-webpack-plugin": "^2.30.1",
+    "jest": "22.4.4",
     "json-loader": "^0.5.7",
     "path": "^0.12.7",
     "webpack": "^3.5.6",

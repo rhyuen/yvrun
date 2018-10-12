@@ -28,7 +28,7 @@ class App extends Component{
     handleEmailSubmit = e => {
         e.preventDefault();
 
-        //MAKE A POST TO A SERVER HERE.
+        //TODO: MAKE A POST TO A SERVER HERE.
 
         this.setState((prevState, props) => {
             return {   
